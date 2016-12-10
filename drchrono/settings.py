@@ -109,3 +109,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+SOCIAL_AUTH_DRCHRONO_KEY = os.environ.get('DR_CHRONO_KEY')
+SOCIAL_AUTH_DRCHRONO_SECRET = os.environ.get('DR_CHRONO_SECRET')
+SOCIAL_AUTH_DRCHRONO_SCOPE=['patients:summary:read']
